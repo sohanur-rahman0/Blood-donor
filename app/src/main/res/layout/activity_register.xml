@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sign_up"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="99dp"
+        android:layout_marginRight="99dp"
+        android:drawableStart="@drawable/account_icon"
+        android:drawableLeft="@drawable/account_icon"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="User Name"
+        android:layout_marginTop="90dp"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        tools:layout_editor_absoluteY="140dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:drawableStart="@drawable/email_icon"
+        android:drawableLeft="@drawable/email_icon"
+        android:drawablePadding="5dp"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/phone"
+        app:layout_constraintEnd_toEndOf="@+id/phone"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/phone" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_phoneicon"
+        android:drawableLeft="@drawable/ic_phoneicon"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:layout_below="@+id/email"
+        android:layout_centerHorizontal="true"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/password" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/lock_icon"
+        android:drawableLeft="@drawable/lock_icon"
+        android:layout_below="@+id/phone"
+        android:layout_centerHorizontal="true"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/confirm_password"
+        app:layout_constraintEnd_toEndOf="@+id/confirm_password"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/confirm_password" />
+
+    <EditText
+        android:id="@+id/confirm_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/lock_icon"
+        android:drawableLeft="@drawable/lock_icon"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        tools:layout_editor_absoluteY="369dp" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirm_password"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="257dp"
+        android:layout_marginRight="257dp"
+        android:text="Gender"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="432dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="149dp"
+        android:layout_marginLeft="149dp"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="589dp">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="78dp"
+            android:layout_height="34dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginRight="35dp"
+            android:text="Male"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/radioButton2"
+            app:layout_constraintHorizontal_bias="0.24"
+            app:layout_constraintStart_toStartOf="@+id/confirm_password"
+            tools:layout_editor_absoluteY="472dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/confirm_password"
+            tools:layout_editor_absoluteY="472dp" />
+
+    </RadioGroup>
+
+
+
+    <Spinner
+        android:id="@+id/selector"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/sign_up_button"
+        app:layout_constraintEnd_toEndOf="@+id/radioButton2"
+        app:layout_constraintStart_toStartOf="@+id/radioButton"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton">
+
+    </Spinner>
+
+    <Button
+        android:id="@+id/sign_up_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="70dp"
+        android:layout_below="@+id/selector"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/rounded_btn"
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="100dp"
+        android:shadowColor="#FFFFFF"
+        android:text="@string/signup"
+        android:textColor="#e4f9ff "
+        android:textColorLink="#F44336"
+        android:textStyle="bold"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/selector"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/selector"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_password"
+        app:layout_constraintVertical_bias="0.588" />
+
+
+    />
+
+    <TextView
+        android:id="@+id/redirect_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Already a member? Login"
+        android:textStyle="bold"
+        android:focusable="false"
+        android:layout_below="@+id/sign_up_button"
+        android:layout_marginTop="20sp"
+        android:layout_centerHorizontal="true"
+
+        />
+
+
+
+
+</RelativeLayout>
