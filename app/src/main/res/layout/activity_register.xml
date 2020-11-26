@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/sign_up"
     android:layout_width="match_parent"
-
+    android:background="@color/lsky"
     android:layout_height="match_parent"
     tools:context=".Register">
 
@@ -24,9 +24,7 @@
         android:hint="User Name"
         android:layout_marginTop="90dp"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/email"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/email"
+
         tools:layout_editor_absoluteY="140dp" />
 
     <EditText
@@ -42,10 +40,7 @@
         android:ems="10"
         android:hint="E-mail"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/phone"
-        app:layout_constraintEnd_toEndOf="@+id/phone"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/phone" />
+         />
 
     <EditText
         android:id="@+id/phone"
@@ -59,10 +54,7 @@
         android:layout_below="@+id/email"
         android:layout_centerHorizontal="true"
         android:inputType="phone"
-        app:layout_constraintBottom_toTopOf="@+id/password"
-        app:layout_constraintEnd_toEndOf="@+id/password"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/password" />
+         />
 
     <EditText
         android:id="@+id/password"
@@ -127,28 +119,36 @@
         tools:layout_editor_absoluteY="589dp">
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/radio_male"
             android:layout_width="78dp"
             android:layout_height="34dp"
             android:layout_marginEnd="35dp"
             android:layout_marginRight="35dp"
             android:text="Male"
             android:textSize="18sp"
-            app:layout_constraintEnd_toStartOf="@+id/radioButton2"
-            app:layout_constraintHorizontal_bias="0.24"
-            app:layout_constraintStart_toStartOf="@+id/confirm_password"
+
             tools:layout_editor_absoluteY="472dp" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/radio_female"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Female"
             android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="@+id/confirm_password"
+            android:layout_toRightOf="@+id/radio_male"
             tools:layout_editor_absoluteY="472dp" />
 
     </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blood Group:"
+        android:layout_below="@+id/radioGroup"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        />
 
 
 
@@ -158,10 +158,7 @@
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/sign_up_button"
-        app:layout_constraintEnd_toEndOf="@+id/radioButton2"
-        app:layout_constraintStart_toStartOf="@+id/radioButton"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton">
+        android:layout_margin="10dp">
 
     </Spinner>
 
@@ -185,12 +182,7 @@
         android:textStyle="bold"
         android:topLeftRadius="10dp"
         android:topRightRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/selector"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="@+id/selector"
-        app:layout_constraintTop_toBottomOf="@+id/confirm_password"
-        app:layout_constraintVertical_bias="0.588" />
+         />
 
 
     />

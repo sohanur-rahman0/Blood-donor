@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_image"
+    android:padding="16dp"
+    android:layout_marginBottom="10dp"
+    >
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="115dp"
+        android:background="@color/lred"
+        android:text="A+"
+        android:gravity="center"
+        android:id="@+id/list_blood_group"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/list_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="TextView"
+        android:layout_toRightOf="@+id/imageView"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:id="@+id/list_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_below="@+id/list_username"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:id="@+id/list_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:layout_toRightOf="@+id/imageView3"
+        android:layout_below="@+id/list_email"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:id="@+id/list_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageView3"
+        android:layout_below="@+id/list_phone"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/list_blood_group"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/account_icon"
+        tools:layout_editor_absoluteX="83dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/list_blood_group"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="5dp"
+
+        app:srcCompat="@drawable/email_icon"
+
+        android:layout_marginLeft="5dp"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/list_blood_group"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        app:srcCompat="@drawable/ic_phoneicon"
+         />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/list_blood_group"
+        android:layout_below="@+id/imageView3"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/ic_account_circle"
+         />
+
+</RelativeLayout>

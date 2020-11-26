@@ -11,22 +11,85 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
     //Initialize variable
     DrawerLayout drawerLayout;
+    ImageView request_button,helpline_button,plasma_button,organization_button,a_positive,a_negative,b_positive,b_negative,ab_positive,ab_negative;
+    ImageView o_positive, o_negative;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        //set view with id
         drawerLayout = findViewById(R.id.drawer_layout);
+        request_button = findViewById(R.id.request_button);
+        helpline_button = findViewById(R.id.request_button);
+        plasma_button = findViewById(R.id.plasma_button);
+        organization_button = findViewById(R.id.organization_button);
+
+        a_positive = findViewById(R.id.a_positive_button);
+        a_negative = findViewById(R.id.ab_negative_button);
+        b_positive = findViewById(R.id.b_negative_button);
+        b_negative = findViewById(R.id.b_negative_button);
+        ab_positive = findViewById(R.id.ab_negative_button);
+        ab_negative = findViewById(R.id.ab_negative_button);
+        o_positive = findViewById(R.id.o_positive_button);
+        o_negative = findViewById(R.id.o_negative_button);
+
+
+        //main functionality
+        //setting click event for all buttons
+
+        request_button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+            }
+
+        });
+
+        helpline_button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+            }
+        });
+
+        plasma_button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+            }
+        });
+
+        organization_button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+            }
+        });
+
+        a_positive.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                startActivity(new Intent(getApplicationContext(), APositive.class));
+            }
+        });
 
 
     }
+
+
+
+
+
+
+    //end
 
     public void ClickMenu(View view){
         //open drawer

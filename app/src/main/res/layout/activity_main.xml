@@ -104,17 +104,17 @@
 
             <ImageView
                 android:id="@+id/a_positive_button"
-                android:layout_width="70dp"
+                android:layout_width="85dp"
                 android:layout_height="70dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginRight="15dp"
                 android:background="@drawable/rounded_image"
                 app:srcCompat="@drawable/a_positive" />
 
             <ImageView
                 android:id="@+id/a_negative_button"
-                android:layout_width="70dp"
+                android:layout_width="85dp"
                 android:layout_height="70dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginRight="15dp"
                 android:layout_toRightOf="@+id/a_positive_button"
                 android:background="@drawable/rounded_image"
                 app:srcCompat="@drawable/a_negative"
@@ -122,17 +122,17 @@
 
             <ImageView
                 android:id="@+id/b_positive_button"
-                android:layout_width="70dp"
+                android:layout_width="85dp"
                 android:layout_height="70dp"
 
-                android:layout_marginRight="30dp"
+                android:layout_marginRight="15dp"
                 android:layout_toRightOf="@+id/a_negative_button"
                 android:background="@drawable/rounded_image"
                 app:srcCompat="@drawable/b_positive" />
 
             <ImageView
                 android:id="@+id/b_negative_button"
-                android:layout_width="70dp"
+                android:layout_width="85dp"
                 android:layout_height="70dp"
                 android:layout_toRightOf="@+id/b_positive_button"
                 android:background="@drawable/rounded_image"
@@ -140,32 +140,32 @@
 
             <ImageView
                 android:id="@+id/ab_positive_button"
-                android:layout_width="70dp"
+                android:layout_width="85dp"
                 android:layout_height="70dp"
                 android:layout_below="@+id/a_positive_button"
                 android:layout_marginTop="10dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginRight="15dp"
                 android:background="@drawable/rounded_image"
                 app:srcCompat="@drawable/ab_positive" />
 
             <ImageView
                 android:id="@+id/ab_negative_button"
-                android:layout_width="70dp"
+                android:layout_width="85dp"
                 android:layout_height="70dp"
                 android:layout_below="@+id/a_negative_button"
                 android:layout_marginTop="10dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginRight="15dp"
                 android:layout_toRightOf="@+id/ab_positive_button"
                 android:background="@drawable/rounded_image"
                 app:srcCompat="@drawable/ab_negative" />
 
             <ImageView
                 android:id="@+id/o_positive_button"
-                android:layout_width="70dp"
+                android:layout_width="85dp"
                 android:layout_height="70dp"
                 android:layout_below="@+id/a_negative_button"
                 android:layout_marginTop="10dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginRight="15dp"
                 android:layout_toRightOf="@+id/ab_negative_button"
                 android:background="@drawable/rounded_image"
                 app:srcCompat="@drawable/o_positive" />
@@ -173,7 +173,7 @@
 
             <ImageView
                 android:id="@+id/o_negative_button"
-                android:layout_width="70dp"
+                android:layout_width="85dp"
                 android:layout_height="70dp"
                 android:layout_below="@+id/b_negative_button"
                 android:layout_marginTop="10dp"
