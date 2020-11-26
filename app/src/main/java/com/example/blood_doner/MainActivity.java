@@ -28,15 +28,15 @@ public class MainActivity extends AppCompatActivity {
         //set view with id
         drawerLayout = findViewById(R.id.drawer_layout);
         request_button = findViewById(R.id.request_button);
-        helpline_button = findViewById(R.id.request_button);
+        helpline_button = findViewById(R.id.helpline_button);
         plasma_button = findViewById(R.id.plasma_button);
         organization_button = findViewById(R.id.organization_button);
 
         a_positive = findViewById(R.id.a_positive_button);
-        a_negative = findViewById(R.id.ab_negative_button);
-        b_positive = findViewById(R.id.b_negative_button);
+        a_negative = findViewById(R.id.a_negative_button);
+        b_positive = findViewById(R.id.b_positive_button);
         b_negative = findViewById(R.id.b_negative_button);
-        ab_positive = findViewById(R.id.ab_negative_button);
+        ab_positive = findViewById(R.id.ab_positive_button);
         ab_negative = findViewById(R.id.ab_negative_button);
         o_positive = findViewById(R.id.o_positive_button);
         o_negative = findViewById(R.id.o_negative_button);
@@ -78,6 +78,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 startActivity(new Intent(getApplicationContext(), APositive.class));
+            }
+        });
+
+        a_negative.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                startActivity(new Intent(getApplicationContext(), ANegative.class));
             }
         });
 

@@ -16,33 +16,33 @@ import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
 
-public class APositive extends AppCompatActivity {
-    public RecyclerView user_list;
-   public FirebaseFirestore db;
-    public FirestoreRecyclerAdapter adapter;
+public class ANegative extends AppCompatActivity {
+    private RecyclerView user_list;
+    private FirebaseFirestore db;
+    private FirestoreRecyclerAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_a_positive);
+        setContentView(R.layout.activity_a_negative);
 
         user_list = findViewById(R.id.user_list);
         db = FirebaseFirestore.getInstance();
 
         //query
-        Query query = db.collection("users").whereEqualTo("blood_group", "A+");
+        Query query = db.collection("users").whereEqualTo("blood_group", "A-");
         //recyclerOption
         FirestoreRecyclerOptions<UserModel> options = new FirestoreRecyclerOptions.Builder<UserModel>().setQuery(query, UserModel.class).build();
 
-        adapter = new FirestoreRecyclerAdapter<UserModel, UserViewHolder>(options){
+        adapter = new FirestoreRecyclerAdapter<UserModel, APositive.UserViewHolder>(options){
             @NonNull
             @Override
-            public UserViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType){
+            public APositive.UserViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType){
                 View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_user_single, parent, false);
-                return new UserViewHolder(view);
+                return new APositive.UserViewHolder(view);
             }
             @Override
-            protected void onBindViewHolder(@NonNull UserViewHolder holder, int position, @NonNull UserModel model){
+            protected void onBindViewHolder(@NonNull APositive.UserViewHolder holder, int position, @NonNull UserModel model){
                 holder.list_username.setText(model.getUsername());
                 holder.list_email.setText(model.getEmail());
                 holder.list_phone.setText(model.getPhone());
@@ -55,11 +55,10 @@ public class APositive extends AppCompatActivity {
         user_list.setHasFixedSize(true);
         user_list.setLayoutManager(new LinearLayoutManager(this));
         user_list.setAdapter(adapter);
-
     }
 
-    public static class UserViewHolder extends RecyclerView.ViewHolder {
-        public TextView list_username,list_email,list_phone,list_gender,list_blood_group;
+    private class UserViewHolder extends RecyclerView.ViewHolder {
+        private TextView list_username,list_email,list_phone,list_gender,list_blood_group;
 
         public UserViewHolder(@NonNull View itemView){
             super(itemView);
