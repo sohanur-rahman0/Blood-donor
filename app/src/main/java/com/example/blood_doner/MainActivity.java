@@ -88,6 +88,51 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        b_positive.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v){
+                startActivity(new Intent(getApplicationContext(), BPositive.class));
+            }
+
+        });
+
+        b_negative.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                startActivity(new Intent(getApplicationContext(), BNegative.class));
+            }
+        });
+
+        ab_positive.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                startActivity(new Intent(getApplicationContext(), ABPositive.class));
+            }
+
+        });
+
+        ab_negative.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                startActivity(new Intent(getApplicationContext(), ABNegative.class));
+            }
+
+        });
+
+        o_positive.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                startActivity(new Intent(getApplicationContext(), OPositive.class));
+            }
+        });
+
+        o_negative.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                startActivity(new Intent(getApplicationContext(), ONegative.class));
+            }
+        });
 
     }
 
