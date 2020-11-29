@@ -10,110 +10,6 @@
     android:padding="16dp"
     android:layout_marginBottom="10dp"
     >
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/rounded_image"
-    android:padding="16dp"
-    android:layout_marginBottom="10dp"
-    >
-
-
-    <TextView
-        android:id="@+id/list_username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
-        android:text="SWAJON Blood Society"
-        android:layout_toRightOf="@+id/imageView"
-        android:textStyle="bold"
-        android:layout_marginLeft="5dp" />
-
-    <TextView
-        android:id="@+id/list_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="swajon231@gmail.com"
-        android:layout_toRightOf="@+id/imageView2"
-        android:layout_below="@+id/list_username"
-        android:textStyle="bold"
-        android:layout_marginLeft="5dp" />
-
-    <TextView
-        android:id="@+id/list_phone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="01712348593"
-        android:layout_toRightOf="@+id/imageView3"
-        android:layout_below="@+id/list_email"
-        android:textStyle="bold"
-        android:layout_marginLeft="5dp" />
-
-    <TextView
-        android:id="@+id/list_gender"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/imageView3"
-        android:layout_below="@+id/list_phone"
-        android:layout_marginTop="10dp"
-        android:text="kajla Rajshahi"
-        android:textStyle="bold"
-        android:layout_marginLeft="5dp"
-        />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/list_blood_group"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/account_icon"
-        tools:layout_editor_absoluteX="83dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="2dp"
-        />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/list_blood_group"
-        android:layout_below="@+id/imageView"
-        android:layout_marginTop="5dp"
-
-        app:srcCompat="@drawable/email_icon"
-
-        android:layout_marginLeft="5dp"/>
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/list_blood_group"
-        android:layout_below="@+id/imageView2"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="5dp"
-        app:srcCompat="@drawable/ic_phoneicon"
-        />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/list_blood_group"
-        android:layout_below="@+id/imageView3"
-
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="5dp"
-        app:srcCompat="@drawable/ic_location"
-
-        />
-
-</RelativeLayout>
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
@@ -130,7 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
-            android:text="Red Cresent"
+            android:text="Rajshahi medical collage Hospital"
             android:layout_toRightOf="@+id/imageView"
             android:textStyle="bold"
             android:layout_marginLeft="5dp" />
@@ -140,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="redCresentrajshahi@gmsil.com"
+            android:text="principarlrajsahi@yahoo.com"
             android:layout_toRightOf="@+id/imageView2"
             android:layout_below="@+id/list_username"
             android:textStyle="bold"
@@ -151,7 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="01712347485"
+            android:text="0721772150"
             android:layout_toRightOf="@+id/imageView3"
             android:layout_below="@+id/list_email"
             android:textStyle="bold"
@@ -164,7 +60,7 @@
             android:layout_toRightOf="@+id/imageView3"
             android:layout_below="@+id/list_phone"
             android:layout_marginTop="10dp"
-            android:text="shamakhdum Rajshahi"
+            android:text="Medical College Road Laxmipur"
             android:textStyle="bold"
             android:layout_marginLeft="5dp"
             />
@@ -234,7 +130,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
-            android:text="VU blood Bank"
+            android:text="Popular Diagnostic"
             android:layout_toRightOf="@+id/imageView"
             android:textStyle="bold"
             android:layout_marginLeft="5dp" />
@@ -244,7 +140,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="vudeptcseblood21.com"
+            android:text="popularrajshahi@gmsil.com"
             android:layout_toRightOf="@+id/imageView2"
             android:layout_below="@+id/list_username"
             android:textStyle="bold"
@@ -255,7 +151,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="0171234563"
+            android:text="01944-447930"
             android:layout_toRightOf="@+id/imageView3"
             android:layout_below="@+id/list_email"
             android:textStyle="bold"
@@ -268,7 +164,7 @@
             android:layout_toRightOf="@+id/imageView3"
             android:layout_below="@+id/list_phone"
             android:layout_marginTop="10dp"
-            android:text="Talaimari Rajshahi"
+            android:text="Chowdhury Tower, 306 Ct Station Rd, Rajshahi"
             android:textStyle="bold"
             android:layout_marginLeft="5dp"
             />
@@ -338,7 +234,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
-            android:text="Rajshahi University Blood Bank"
+            android:text="Islami Bank Medical College Hospital Rajshahi"
             android:layout_toRightOf="@+id/imageView"
             android:textStyle="bold"
             android:layout_marginLeft="5dp" />
@@ -348,7 +244,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="rajuniblood.com"
+            android:text="Notavailable"
             android:layout_toRightOf="@+id/imageView2"
             android:layout_below="@+id/list_username"
             android:textStyle="bold"
@@ -359,7 +255,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="01712348531"
+            android:text=" 01763-930101"
             android:layout_toRightOf="@+id/imageView3"
             android:layout_below="@+id/list_email"
             android:textStyle="bold"
@@ -372,7 +268,111 @@
             android:layout_toRightOf="@+id/imageView3"
             android:layout_below="@+id/list_phone"
             android:layout_marginTop="10dp"
-            android:text="Rajshahi University"
+            android:text="Medical Road, Rajshahi 6000"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/list_blood_group"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/account_icon"
+            tools:layout_editor_absoluteX="83dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/list_blood_group"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="5dp"
+
+            app:srcCompat="@drawable/email_icon"
+
+            android:layout_marginLeft="5dp"/>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/list_blood_group"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            app:srcCompat="@drawable/ic_phoneicon"
+            />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/list_blood_group"
+            android:layout_below="@+id/imageView3"
+
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/ic_location"
+
+            />
+
+    </RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_image"
+        android:padding="16dp"
+        android:layout_marginBottom="10dp"
+        >
+
+
+        <TextView
+            android:id="@+id/list_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Institute of Epidemiology Disease Control And Research IEDCR"
+            android:layout_toRightOf="@+id/imageView"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:id="@+id/list_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="directoriedcr@gmail.com"
+            android:layout_toRightOf="@+id/imageView2"
+            android:layout_below="@+id/list_username"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:id="@+id/list_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=" 01944-333222"
+            android:layout_toRightOf="@+id/imageView3"
+            android:layout_below="@+id/list_email"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:id="@+id/list_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageView3"
+            android:layout_below="@+id/list_phone"
+            android:layout_marginTop="10dp"
+            android:text="44 Mohakhali, Dhaka 1212"
             android:textStyle="bold"
             android:layout_marginLeft="5dp"
             />

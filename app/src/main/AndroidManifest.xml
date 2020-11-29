@@ -11,7 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ONegative"></activity>
+        <activity android:name=".Plasma"></activity>
+        <activity android:name=".Request" />
+        <activity android:name=".Help_Line" />
+        <activity android:name=".ONegative" />
         <activity android:name=".OPositive" />
         <activity android:name=".ABNegative" />
         <activity android:name=".ABPositive" />

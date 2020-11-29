@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         request_button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-
+                startActivity(new Intent(getApplicationContext(), Request.class));
             }
 
         });
@@ -56,21 +56,21 @@ public class MainActivity extends AppCompatActivity {
         helpline_button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-
+                startActivity(new Intent(getApplicationContext(), Help_Line.class));
             }
         });
 
         plasma_button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-
+                startActivity(new Intent(getApplicationContext(), Plasma.class));
             }
         });
 
         organization_button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-
+                startActivity(new Intent(getApplicationContext(), Organization.class));
             }
         });
 
